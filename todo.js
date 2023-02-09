@@ -12,6 +12,22 @@
 
     tempat.appendChild(title);
 
+    const clear = document.createElement("input");
+    clear.value = "done";
+    clear.type = "button";
+    clear.onclick = function () {
+        const tempat2 = document.getElementById("tempat2");
+        tempat2.appendChild(title);
+        clear.value = "complited";
+
+        clear.onclick = function () {
+            alert("selamat kamu sudah terdaftar");
+            title.remove();
+        }
+    }
+
+    title.appendChild(clear);
+
 
 
 }
