@@ -7,7 +7,7 @@
 
     const isi = `nama saya ${nama} saya berasal dari ${asal}`;
 
-    const title = document.createElement("h1");
+    const title = document.createElement("h4");
     title.textContent = isi;
 
     tempat.appendChild(title);
